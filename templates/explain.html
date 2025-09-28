@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شرح التطبيق - Security FF APK</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>شرح التطبيق</h1>
+            <p class="by-line">By Security FF APK</p>
+        </div>
+        
+        <div class="explanation">
+            <div class="explain-card">
+                <h2>ماهو التطبيق؟</h2>
+                <p>تطبيق Security FF APK يقدم خدمة حماية متقدمة للحسابات من خلال:</p>
+                <ul>
+                    <li>عرض ايميل الاستعادة الخاص بالحسابات</li>
+                    <li>حذف ايميل الاستعادة وإضافة ايميل جديد</li>
+                    <li>إضافة رمز استعادة مخصص (OTP)</li>
+                    <li>عمل مع الحسابات الغير مبندة والمبندة</li>
+                </ul>
+            </div>
+            
+            <div class="explain-card">
+                <h2>الميزات المتاحة</h2>
+                <ul>
+                    <li>Change Email - تغيير الإيميل</li>
+                    <li>Display Email - عرض الإيميل</li>
+                    <li>Custom OTP - رمز استعادة مخصص</li>
+                    <li>Delete Email - حذف الإيميل</li>
+                 
+                </ul>
+            </div>
+            
+            <div class="explain-card">
+                <h2>كيفية الاستخدام</h2>
+                <ol>
+                    <li>قم بإنشاء حساب جديد</li>
+                    <li>انتظر تفعيل الحساب من قبل المسؤول</li>
+                    <li>بعد التفعيل ستكون جميع الميزات متاحة</li>
+                    <li>يمكنك استخدام APIs للوصول للبيانات</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <a href="{{ url_for('index') }}" class="btn">العودة للرئيسية</a>
+        </div>
+    </div>
+</body>
+</html>

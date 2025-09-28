@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - Security FF APK</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>لوحة التحكم</h1>
+            <p class="by-line">By Security FF APK</p>
+        </div>
+        
+        <div class="user-info">
+            <h2>معلومات الحساب</h2>
+            <div class="info-card">
+                <p><strong>اسم المستخدم:</strong> {{ user_data.username }}</p>
+                <p><strong>الحالة:</strong> 
+                    <span class="status {{ 'active' if user_data.is_active else 'inactive' }}">
+                        {{ 'مفعل' if user_data.is_active else 'غير مفعل' }}
+                    </span>
+                </p>
+                <p><strong>تاريخ الإنشاء:</strong> {{ user_data.created_at }}</p>
+            </div>
+            
+            <h2>الميزات المتاحة</h2>
+            <div class="features">
+                {% for feature, enabled in user_data.features.items() %}
+                <div class="feature-item {{ 'enabled' if enabled else 'disabled' }}">
+                    {{ feature }}: {{ 'مفعل' if enabled else 'غير مفعل' }}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="actions">
+            <a href="{{ url_for('logout') }}" class="btn logout">تسجيل الخروج</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "username": "mohamedbougrina",
+    "password_hash": "94c789e013370258d5ebc5958cfdb16c65a554a58d9306f583eb0c4e10c2dc6c",
+    "is_active": false,
+    "email": "",
+    "custom_otp": "",
+    "fake_email": "",
+    "fake_otp": "",
+    "user_token": "",
+    "created_at": "2025-09-28T09:59:45.049260",
+    "last_login": "2025-09-28T10:00:42.184943",
+    "session_id": "9f8c9ffe468aa56a3d8614410281b3e9d27809203c8dedea3535140e9c4239b0",
+    "features": {
+        "change_email": false,
+        "display_email": false,
+        "custom_otp": false,
+        "delete_email": false,
+        "fake_otp": false,
+        "fake_email": false,
+        "token_user": false
+    }
+}
